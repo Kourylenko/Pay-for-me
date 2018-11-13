@@ -7,35 +7,34 @@
 </head>
 
 <body>
-    <label class="inputNamesData" for="namesData">Введите всех участников:</label>
+    <label class="inputNamesData" for="namesData"></label>
     <input class="inputNamesData" type="text" id="namesData">
-    <button>Добавить</button>
+    <button id="addName">Add name</button>
     <ol id="data"></ol>
-
     <br>
     <br>
-
-    <label class="inputPlase" for="plase">Place</label>
-    <input class="inputPlase" type="text" id="plase">
-
+    <button id="goCalcul">Go to calculation</button>
     <br>
-
-    <label class="selectName" for="nameWhoPay">Who Pay</label>
-    <select class="selectName" id="nameWhoPay">
-        <option>Tanya</option>
-    </select>
-
     <br>
-
-    <label class="inputHowMuch" for="howMuch">How Much</label>
-    <input class="inputHowMuch" type="number" id="howMuch">
-
-    <br>
-
-    <p>From Who</p>
-    
-
-
+    <div class="calculationPage">
+        <label class="inputPlase" for="plase">Place</label>
+        <input class="inputPlase" type="text" id="plase">
+        <br>
+        <label class="selectName" for="nameWhoPay">Who Pay</label>
+        <select class="selectName" id="nameWhoPay"></select>
+        <br>
+        <label class="inputHowMuch" for="howMuch">How Much</label>
+        <input class="inputHowMuch" type="number" id="howMuch">
+        <br>
+        <p>From Who</p>
+        <div>
+            <ul id="debtors">
+                <li>Tanya</li>
+            </ul>
+        </div>
+        <br>
+        <button id="calculate">Calculate</button>
+    </div>
     <script type="text/javascript" src="./PayForMe.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
