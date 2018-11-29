@@ -4,41 +4,47 @@
 <head>
     <title>Pay For Me Bitch</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="PayForMe.css">
 </head>
 
 <body>
-    <label class="inputNamesData" for="namesData"></label>
-    <input class="inputNamesData" type="text" id="namesData">
-    <button id="addName">Add name</button>
-    <ol id="data"></ol>
-    <br>
-    <br>
-    <button id="goCalcul">Go to calculation</button>
-    <br>
-    <br>
-    <div class="calculationPage">
-        <label class="inputPlase" for="plase">Place</label>
-        <input class="inputPlase" type="text" id="plase">
-        <br>
-        <label class="selectName" for="nameWhoPay">Who Pay</label>
-        <select class="selectName" id="nameWhoPay"></select>
-        <br>
-        <label class="inputHowMuch" for="howMuch">How Much</label>
-        <input class="inputHowMuch" type="number" id="howMuch">
-        <br>
-        <p>From Who</p>
-        <div>
-            <ul id="debtors">
-                <li>Tanya</li>
-            </ul>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Pay For Me</h1>
+            <p class="lead">I can help you calculate your expenses</p>
         </div>
-        <br>
-        <button id="calculate">Calculate</button>
+    </div>
+    <div class="container">
+        <div id="firstBlock">
+            <label class="inputNamesData" for="namesData">Person who will pay:</label>
+            <input class="inputNamesData" type="text" id="namesData">
+            <button type="button" id="addName" class="btn btn-outline-dark">Add name</button>
+            <ol id="data"></ol>
+            <button type="button" id="goCalcul" class="btn btn-outline-dark">Go to calculation</button>
+        </div>
+        <div class="secondBlock">
+            <label class="inputPlase" for="plase">Where did the payment occured?</label>
+            <input class="inputPlase" type="text" id="plase">
+            <div>
+                <label class="selectName" for="nameWhoPay">Who paid</label>
+                <select class="selectName" id="nameWhoPay"></select>
+            </div>
+            <label class="inputHowMuch" for="howMuch">How much</label>
+            <input class="inputHowMuch" type="number" id="howMuch">
+            <p>For whom:</p>
+            <div>
+                <ul id="debtors">
+                    <!-- <li>Tanya</li> -->
+                </ul>
+            </div>
+            <button type="button" id="calculate" class="btn btn-outline-dark">Calculate</button>
+        </div>
     </div>
     <script type="text/javascript" src="./PayForMe.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!--  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> -->
+    <footer>Tanya copyright 2018 (c)</footer>
 </body>
 
 </html>

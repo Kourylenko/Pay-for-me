@@ -1,7 +1,7 @@
 var names = [];
 var whoPaid = names[0];
 var howMuch = 300;
-var forWho = ["Tanya", "Glib", "Olga"];
+var forWho = [];
 
 
 document.querySelector("#addName").addEventListener("click", function() {
