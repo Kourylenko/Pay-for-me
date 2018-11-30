@@ -21,13 +21,16 @@ document.querySelector("#addName").addEventListener("click", function() {
 
 document.querySelector("#goCalcul").addEventListener("click", function() {
     // On click, find select. 
+    
     var select = document.getElementById("nameWhoPay");
-    var ulDebtors = document.querySelector("#debtors");
+    var selectDebtors = document.querySelector("#debtors");
+    var secondBlock = document.querySelector(".secondBlock");
+    secondBlock.style.display = "block";
     // then loop through names Arr 
     for (var i = 0; i < names.length; i++) {
         // then call f to put value of current element arr 
         createElement("option", select, names[i]);
-        createElement("li", ulDebtors, names[i]);
+        createElement("option", selectDebtors, names[i]);
     }
 });
 /*

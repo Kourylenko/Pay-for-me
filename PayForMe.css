@@ -17,6 +17,15 @@ footer {
   background-color: #7da453;
 }
 
+input {
+	border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.4;
+    border-radius: .25rem;
+     
+}
+
 .jumbotron {
 	background-color: #7da453;
 	color: white;
@@ -29,7 +38,9 @@ footer {
 
 }
 
-
+.secondBlock {
+	display: none;
+}
 
 	
 
